@@ -19,12 +19,12 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - cryptography<=3.3.2
+    - cryptography <=3.3.2
     - flask
     - appdirs
   run:
     - python >=3.6
-    - cryptography<=3.3.2
+    - cryptography <=3.3.2
     - flask
     - appdirs
 

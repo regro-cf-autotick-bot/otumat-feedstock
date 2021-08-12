@@ -1,14 +1,14 @@
 {% set name = "otumat" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
-
+# test message1
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/otumat-{{ version }}.tar.gz
-  sha256: b60e5a4ff7985b3109dd26e9194f3b1fadff1c3f65562cb402d4b226cb653d17
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 4cfe539b3d08ed1b9dc1ed1feef53fcb7e81417725f020116de1b561d47c4b7e
 
 build:
   number: 0
@@ -19,10 +19,14 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - cryptography
+    - cryptography <=3.3.2
+    - flask
+    - appdirs
   run:
     - python >=3.6
-    - cryptography
+    - cryptography <=3.3.2
+    - flask
+    - appdirs
 
 test:
   imports:

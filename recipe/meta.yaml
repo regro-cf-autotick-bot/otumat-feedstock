@@ -20,6 +20,7 @@ requirements:
     - python >=3.6
     - pip
     - cryptography
+    - appdirs
   run:
     - python >=3.6
     - cryptography

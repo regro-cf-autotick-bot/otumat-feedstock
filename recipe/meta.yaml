@@ -19,15 +19,16 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - cryptography <=3.3.2
+    - cryptography
     - flask
     - appdirs
+    - watchdog
   run:
     - python >=3.6
-    - cryptography <=3.3.2
+    - cryptography
     - flask
     - appdirs
-
+    - watchdog
 test:
   imports:
     - otumat
